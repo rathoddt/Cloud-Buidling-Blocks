@@ -31,6 +31,28 @@ vagrant destroy
    - Create directory to store vagrant files e.g. `vagrant-vms`
 2. Download VM image
    - Downlaod VM image from vagrant cloud `https://app.vagrantup.com/`
-   10.02
+   ```
+   vagrant init eurolinux-vagrant/centos-stream-9
+   ```
+   A `Vagrantfile` has been placed in this directory. You are now ready to `vagrant up` your first virtual environment! Please read the comments in the Vagrantfile as well as documentation on `vagrantup.com` for more information on using Vagrant.
+
+   ```
+   vagrant up
+   vagrant list
+   vagrant status
+
+   #Inside VM
+   uname -m
+   cat /etc/os-release
+   whoami
+   sudo -i  #login to root user
+
+   ```
+
+
+
+
+
+
 
 - Provisioning VM/Executing commands & scripts
