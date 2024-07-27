@@ -11,6 +11,9 @@ vagrant ssh
 vagrant halt
 
 # Delete VM
-vagrant
+vagrant destroy
 ```
+
+### Step 1
+-- Create directory to store vagrant files e.g. `vagrant-vms`
 - Provisioning VM/Executing commands & scripts
