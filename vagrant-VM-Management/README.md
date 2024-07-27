@@ -47,6 +47,7 @@ vagrant destroy
    whoami
    sudo -i  #login to root user
 
+   vagrant halt
    ```
 
 
