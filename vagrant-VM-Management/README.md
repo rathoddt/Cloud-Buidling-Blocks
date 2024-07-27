@@ -1,5 +1,18 @@
 # VM Managemnt using Vagrant
 - VM changes automatic through Vagrantfile
+- Vagrant Insttalllation
+Install chocolatey from URL 
+https://docs.chocolatey.org/en-us/choco/setup/
+or run Powershell command using admin priviledges
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+Install Vagrant using choco command
+```
+choco install vagrant --version=2.4.1 -y
+```
+
 - Vagrant commands to manage VM’s
 ```
 # Install/start VM
@@ -14,8 +27,10 @@ vagrant halt
 vagrant destroy
 ```
 
-1. Step 1
+1. Create directory
    - Create directory to store vagrant files e.g. `vagrant-vms`
-
+2. Download VM image
+   - Downlaod VM image from vagrant cloud `https://app.vagrantup.com/`
+   10.02
 
 - Provisioning VM/Executing commands & scripts
