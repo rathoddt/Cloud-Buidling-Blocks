@@ -14,6 +14,8 @@ vagrant halt
 vagrant destroy
 ```
 
-### Step 1
--- Create directory to store vagrant files e.g. `vagrant-vms`
+1. Step 1
+  -  Create directory to store vagrant files e.g. `vagrant-vms`
+
+
 - Provisioning VM/Executing commands & scripts
