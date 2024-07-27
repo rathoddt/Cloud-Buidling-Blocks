@@ -48,6 +48,8 @@ vagrant destroy
    sudo -i  #login to root user
 
    vagrant halt
+   vagrant reload #reload
+   vagrant global-status # for all vms 
    ```
 
 
