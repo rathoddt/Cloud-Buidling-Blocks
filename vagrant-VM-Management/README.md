@@ -54,8 +54,34 @@ vagrant destroy
 
 
 
+## Customizing Vgrantfile
+Customizing Vgrantfile for 
+1) Static IP uncommnet line with  config.vm.network and assign IP e.g 192.168.56.14
+```
+ # Create a private network, which allows host-only access to the machine
+ # using a specific IP.
+   config.vm.network "private_network", ip: "192.168.56.14"
+```
 
+2) Bridged network
+```
+  # Create a public network, which generally matched to bridged network.
+  # Bridged networks make the machine appear as another physical device on
+  # your network.
+   config.vm.network "public_network"
+```
 
-
+3) Customize CPU and Memory  
+Customised block should look like
+```
+   config.vm.provider "virtualbox" do |vb|
+  #   # Display the VirtualBox GUI when booting the machine
+  #   vb.gui = true
+  #
+  #   # Customize the amount of memory on the VM:
+     vb.memory = "1500"
+     vb.cpus = "1"
+   end
+```
 
 - Provisioning VM/Executing commands & scripts
