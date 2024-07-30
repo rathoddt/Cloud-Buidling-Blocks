@@ -92,4 +92,14 @@ Customised block should look like
   # config.vm.synced_folder "../data", "/vagrant_data"
     config.vm.synced_folder "H:\\VirtualBox-VMs\\vagrant-vms\\data\\centos-data", "/opt/vagrant_data"
 ```
+
+5) VM Snapshot
+
+```
+PS H:\VirtualBox-VMs\vagrant-vms\centos> vagrant snapshot push
+==> default: Snapshotting the machine as 'push_1722357853_9009'...
+==> default: Snapshot saved! You can restore the snapshot at any time by
+==> default: using `vagrant snapshot restore`. You can delete it using
+==> default: `vagrant snapshot delete`.
+```
 - Provisioning VM/Executing commands & scripts
