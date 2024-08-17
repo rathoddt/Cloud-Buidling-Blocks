@@ -103,3 +103,8 @@ PS H:\VirtualBox-VMs\vagrant-vms\centos> vagrant snapshot push
 ==> default: `vagrant snapshot delete`.
 ```
 - Provisioning VM/Executing commands & scripts
+
+6) Guest addtion
+```
+vagrant plugin install vagrant-vbguest 
+```
